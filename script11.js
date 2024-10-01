@@ -1,0 +1,22 @@
+/* 
+Elaborar um programa que efetue a apresentação do valor da conversão em dólar de um valor lido em 
+real. O programa deve solicitar o valor da cotação do dólar e também a quantidade de reais disponível 
+com o usuário, para que seja apresentado o valor em moeda americana.          
+*/
+
+let cotacaoDolar = parseFloat(prompt("Digite o valor da cotação do dólar: ")); // insirá o valor da cotação do dólar (Na epoca que esse programa está sendo feito a cotação atual é 5,54 real brasileiro).
+let valorReais = parseFloat(prompt("Digite a quantidade de dólares: ")); // insira o valor da quantidade dísponivel de dólares.
+
+let conversao = valorReais * cotacaoDolar; //calculo de conversão
+
+alert(
+  `O valor de dólares disponíveis convertidos para real brasileiro é: ${conversao.toFixed(
+    2
+  )} RS$ `
+); //exibindo o valor da conversão em um alert
+
+console.log(
+  `O valor de dólares disponíveis convertidos para real brasileiro é: ${conversao.toFixed(
+    2
+  )} RS$ `
+); //exibindo o valor da conversão em um console.log
